@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3媒体查询</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			height: 1000px;
+			background-color: skyblue;
+		}
+		@media screen and (min-width: 640px) {
+			.container {
+				width: 640px;
+				background-color: blueviolet;
+			}
+		}
+		@media screen and (min-width: 960px) {
+			.container {
+				width: 960px;
+				background-color: orange;
+			}
+		}
+		@media screen and (min-width: 1280px) {
+			.container {
+				width: 1280px;
+				background-color: pink;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container"></div>
+</body>
+</html>
